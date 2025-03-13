@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="EclipseLag">
+    <output-path>$PROJECT_DIR$/out/artifacts/EclipseLag</output-path>
+    <root id="archive" name="EclipseLag.jar">
+      <element id="module-output" name="LagEclipseCraft" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,23 @@
+name: LagEclipseCraft
+version: 1.0
+main: br.com.Pedro.lageclipsecraft.LagEclipseCraft
+api-version: 1.21
+softdepend: [SuperiorSkyblock2, RoseStacker]
+commands:
+  eclipselag:
+    description: Comando principal do LagEclipseCraft para gerenciamento de lag
+    usage: /<command> [clear|reload|info|map|abyss|profile|config|stats]
+    aliases: [elag, lagfix]
+    permission: lagfixer.command
+  eclipsecraft:
+    description: Comando auxiliar do LagEclipseCraft
+    usage: /<command> [version]
+    aliases: [ecraft]
+    permission: lagfixer.command
+permissions:
+  lagfixer.command:
+    description: Permite usar os comandos básicos do LagEclipseCraft
+    default: op
+  lagfixer.command.config:
+    description: Permite configurar o plugin via comando
+    default: op

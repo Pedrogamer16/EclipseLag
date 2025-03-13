@@ -1,0 +1,58 @@
+main:
+  prefix: "&8[&e&l⚡&8] "
+  monitor_interval: 5
+  bStats: true
+  optimize_memory: true
+  optimize_cpu: true
+  resource_optimization_interval: 600
+  unload_inactive_chunks: true
+  debug: false
+  language: "pt"
+
+modules:
+  WorldCleaner:
+    enabled: true
+    worlds: ["*"]
+    values:
+      interval: 480
+      allowed_worlds: ["*"]
+      items:
+        enabled: true
+        time_lived: 10000
+        interval: 300
+        abyss:
+          enabled: false
+      mobs:
+        enabled: true
+      creatures:
+        enabled: true
+        list: ["ZOMBIE", "SKELETON", "SPIDER"]
+      projectiles:
+        enabled: true
+      blacklist:
+        entities: ["ARMOR_STAND", "ITEM_FRAME", "PLAYER"]
+        blocks: ["CHEST", "FURNACE"]
+      rosestacker_remove: false
+      alerts: true
+
+  EntityLimiter:
+    enabled: true
+    worlds: ["*"]
+    values:
+      limit_type: "chunk"
+      perworld:
+        ZOMBIE: 50
+        SKELETON: 30
+      alerts: true
+
+  RedstoneLimiter:
+    enabled: true
+    values:
+      ticks_limit:
+        redstone: 1000
+      per_chunk_limit: 50
+
+  CustomVehicles:
+    enabled: true
+    values:
+      minecart_limit_per_chunk: 10
